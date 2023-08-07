@@ -1,0 +1,14 @@
+displayName: jwt parser
+type: middleware
+iconPath: .assets/icon.png
+
+import: github.com/qxsugar/traefik-jwt-parser
+
+summary: Automatically parse jwt and set data to request header
+
+testData:
+  TokenKey: Authorization
+  SecretKey: traefik-jwt-parser
+  TrustKeys:
+    - Uid
+    - CompanyId
